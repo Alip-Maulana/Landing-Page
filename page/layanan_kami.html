@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <a href="" class="logo">Logo</a>
+        <ul class="menu">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../index.html#tentang">Tentang</a></li>
+          <li><a href="../index.html#produk">Produk</a></li>
+          <li><a href="#">Layanan</a></li>
+          <li><a href="../page/kontak_kami.html">Kontak Kami</a></li>
+        </ul>
+        <div class="tombol">&#9776;</div>
+      </div>
+    </nav>
+    <section class="layanan-section" id="layanan">
+      <h2>Layanan kami</h2>
+      <table class="layanan-tabel">
+        <thead>
+          <tr>
+            <th>NO</th>
+            <th>Nama Layanan</th>
+            <th>Deskripsi</th>
+            <th>Harga</th>
+          </tr>
+
+          <tr></tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Sablon satuan</td>
+            <td>
+              Sablon satuan dengan harga yang fleksibel, tergantung design dan
+              bahan
+            </td>
+            <td>Rp 80.000 - 90.000</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Sablon Lusin</td>
+            <td>
+              Menawarkan Sablon Lusinan dengan harga paling murah dan kualitas
+              terbaik
+            </td>
+            <td>Rp 900.000 - 1.100.000</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <script type="text/javascript">
+      // Deklarasi tombol dan menu
+      const tombol = document.querySelector(".tombol");
+      const menu = document.querySelector(".menu");
+
+      // Membuat event click
+      // Pada saat tombol di-click, tambahkan class aktif pada class menu
+      // Saat diklik lagi, maka class aktif dihilangkan dari class menu (toggle)
+      tombol.addEventListener("click", () => {
+        menu.classList.toggle("aktif");
+      });
+    </script>
+  </body>
+</html>

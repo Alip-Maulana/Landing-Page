@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Membuat Navbar responsive dengan html dan css</title>
+    <link rel="stylesheet" href="style.css"
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <a href="" class="logo">Tworth</a>
+        <ul class="menu">
+          <li><a href="#welcome">Home</a></li>
+          <li><a href="#tentang">Tentang</a></li>
+          <li><a href="#produk">Produk</a></li>
+          <li><a href="page/layanan_kami.html">Layanan</a></li>
+          <li><a href="page/kontak_kami.html">Kontak Kami</a></li>
+        </ul>
+        <div class="tombol">&#9776;</div>
+      </div>
+    </nav>
+    <section class="welcome-section" id="welcome">
+      <div class="welcome-text">
+        <h1>Selamat Datang</h1>
+        <p style="margin-bottom: 40px">
+          Welcome At TrustWorthy Clothing Store, we present a collection of
+          clothes that are not only stylish but also comfortable to wear. Each
+          piece is designed with special attention to detail, using
+          high-quality, skin-friendly materials. Find various clothing choices
+          ranging from casual to formal, suitable for every occasion. <br />
+          Copyright by TrustWorthy@2024
+        </p>
+        <a href="#tentang" class="btn-primary">Lihat Detail</a>
+      </div>
+    </section>
+    <section class="tentang-section" id="tentang">
+      <div class="image-container">
+        <img src="asset/bgtentang.jpg" alt="Deskripsi gambar" />
+      </div>
+      <div class="text-container">
+        <h2>About Us</h2>
+        <p>
+          Trus Towrthy is an electric guitar shop that also provides several
+          product offers from local Indonesian brands. also provides a variety
+          of outdoor needs and clothing for beatdown families and souvenirs that
+          we make ourselves and are of course no less cool
+        </p>
+      </div>
+    </section>
+    <section class="produk-section" id="produk">
+      <h2>Produk Kami</h2>
+      <div class="produk-container">
+        <div class="produk-card">
+          <img src="asset/produk/produk1.png" alt="Produk 1" />
+          <h3>Produk 1</h3>
+          <p>Kaos resmi dari lokal brand, Not a bootleg!</p>
+        </div>
+        <div class="produk-card">
+          <img src="asset/produk/produk2.png" alt="Produk 2" />
+          <h3>Produk 2</h3>
+          <p>Import and Local Guitars have a good quality</p>
+        </div>
+        <div class="produk-card">
+          <img src="asset/produk/produk3.jpg" alt="Produk 3" />
+          <h3>Produk 3</h3>
+          <p>HDD and some Jacket</p>
+        </div>
+      </div>
+    </section>
+    <script type="text/javascript">
+      // deklarasi tombol menu
+      const tombol = document.querySelector(".tombol");
+      const menu = document.querySelector(".menu");
+
+      // membuat event click
+      tombol.addEventListener("click", () => {
+        menu.classList.toggle("aktif");
+      });
+    </script>
+  </body>
+</html>
